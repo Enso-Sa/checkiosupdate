@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-checkiosupdate",
+  "version": "1.5",
+  "description": "Check for AppStore version.",
+  "cordova": {
+    "id": "cordova-plugin-checkiosupdate",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enso-Sa/cordova-plugin-checkiosupdate.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Pedro Sá",
+  "bugs": {
+    "url": "https://github.com/Enso-Sa/cordova-plugin-checkiosupdate/issues"
+  },
+  "homepage": "https://github.com/Enso-Sa/cordova-plugin-checkiosupdate#readme"
+}

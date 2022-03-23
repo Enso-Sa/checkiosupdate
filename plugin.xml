@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-checkiosupdate" version="1.5"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>cordova-plugin-checkiosupdate</name>
+	<js-module name="CheckIosUpdate" src="www/cordova-plugin-checkiosupdate.js">
+		<clobbers target="CheckIosUpdate" />
+	</js-module>
+	<platform name="ios">
+		<!-- Hooks -->
+		<hook type="before_plugin_install" src="hooks/install_prerequisites.js"/>
+		<hook type="after_plugin_add" src="hooks/add_swift_support.js" />
+
+		<!-- iOS Source Files -->
+		<source-file src="src/ios/checkVersion-iOS.swift" />
+
+		<config-file parent="/*" target="config.xml">
+			<feature name="CheckIosUpdate">
+				<param name="ios-package" value="CheckIosUpdate" />
+			</feature>
+		</config-file>
+		<config-file target="*-Info.plist" parent="UIAppFonts">
+				<array>
+					<string>Biryani-SemiBold.ttf</string>
+				</array>
+		</config-file>
+	</platform>
+</plugin>
